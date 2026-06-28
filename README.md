@@ -2,7 +2,7 @@
 A high-performance binary utility designed to bridge DMR (Digital Mobile Radio) data stream to the APRS (Automatic Packet Reporting System) network.
 
 ## Project Description
-`dmr-aprs` is a compiled application that processes live DMR radio traffic logs and extracts GPS/location telemetry. It parses location data sent by digital handhelds or mobiles and transforms it into standard APRS packets, allowing real-time positioning on tracking networks like APRS.fi. Being a compiled binary, it runs with minimal CPU and memory overhead, making it ideal for embedded systems and hotspots.
+`dmr-aprs` is a compiled application that processes live DMR radio traffic logs and extracts GPS/location telemetry. It parses location data sent by digital handhelds or mobiles and transforms it into standard APRS packets, allowing real-time positioning on tracking networks like APRS.fi. Being a compiled binary, it runs with minimal CPU and memory overhead, making it ideal for embedded systems and hotspots based on Raspberry Pi.
 
 ⚠️ **CRITICAL REQUIREMENT & WARNING**
 This application is strictly compatible only with versions of **MMDVMHost that feature native MQTT logging support**. It reads the live DMR data directly from MQTT topics. Ensure your MMDVMHost is configured to publish to an MQTT broker before deploying this utility.
@@ -14,7 +14,7 @@ This application is strictly compatible only with versions of **MMDVMHost that f
 Since `dmr-aprs` is distributed as a compiled binary, you do not need to install source code dependencies. 
 
 ### 1. Make the binary executable
-After downloading or transferring the binary to your Debian system, grant it execution permissions:
+After downloading or transferring the binary to your Raspbery PI Debian system, grant it execution permissions:
 ```bash
 chmod +x dmr-aprs
 ```
