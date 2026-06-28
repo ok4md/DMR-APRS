@@ -1,4 +1,4 @@
-# DMR-APRS
+# DMR-APRS for MMDVM-Host with MQTT support
 
 ## Project Description
 `dmr-aprs` is a compiled application that processes live DMR radio traffic logs and extracts GPS/location telemetry. It parses location data sent by digital handhelds or mobiles and transforms it into standard APRS packets, allowing real-time positioning on tracking networks like APRS.fi. Being a compiled binary, it runs with minimal CPU and memory overhead, making it ideal for embedded systems and hotspots based on Raspberry Pi.
