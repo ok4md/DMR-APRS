@@ -36,7 +36,7 @@ nano config.json
 
 Fill in your specific details:
 * **MQTT:** Broker IP address, port, and topics matching your MMDVMHost configuration.
-* **APRS-IS:** Your amateur radio Callsign (e.g., `OK1XXX-10`), APRS passcode, and the target APRS server URL.
+* **APRS-IS:** Your amateur radio Callsign or repeater Callsign (e.g., `OK1XXX-10`), APRS passcode, and the target APRS server URL.
 
 ---
 
