@@ -13,25 +13,11 @@ This application is strictly compatible only with versions of **MMDVMHost that f
 
 Since `dmr-aprs` is distributed as a compiled binary, you do not need to install source code dependencies. 
 
-### 1. Make the binary executable
+### Make the binary executable
 After downloading or transferring the binary to your Raspbery PI Debian system, grant it execution permissions:
 ```bash
 chmod +x dmr-aprs
 ```
-
-### 2. Initial Run & Auto-Configuration
-When you run the binary for the very first time, it detects that no configuration file exists. **The application will automatically generate a default configuration file** (e.g., `config.json` or `config.ini`) in the same directory.
-
-Execute the initial run:
-```bash
-./dmr-aprs
-```
-
-Fill in your specific details:
-* **MQTT:** Broker IP address, port, and topics matching your MMDVMHost configuration (host,modem...).
-* **APRS-IS:** Your amateur radio Callsign or repeater Callsign (e.g., `OK1XXX-10`), APRS passcode, and the target APRS server URL.
-
----
 
 ## Daily Usage
 
