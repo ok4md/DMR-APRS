@@ -20,22 +20,15 @@ chmod +x dmr-aprs
 ```
 
 ### 2. Initial Run & Auto-Configuration
-When you run the binary for the very first time, it detects that no configuration file exists. **The application will automatically generate a default configuration file** (e.g., `config.json` or `config.ini`) in the same directory and then exit.
+When you run the binary for the very first time, it detects that no configuration file exists. **The application will automatically generate a default configuration file** (e.g., `config.json` or `config.ini`) in the same directory.
 
 Execute the initial run:
 ```bash
 ./dmr-aprs
 ```
 
-### 3. Edit the Configuration
-Open the newly generated configuration file using your preferred text editor (for example, `nano`):
-```bash
-nano config.json
-```
-*(Replace `config.json` with the actual filename created by the binary, such as `config.ini` or `dmr-aprs.conf`).*
-
 Fill in your specific details:
-* **MQTT:** Broker IP address, port, and topics matching your MMDVMHost configuration.
+* **MQTT:** Broker IP address, port, and topics matching your MMDVMHost configuration (host,modem...).
 * **APRS-IS:** Your amateur radio Callsign or repeater Callsign (e.g., `OK1XXX-10`), APRS passcode, and the target APRS server URL.
 
 ---
